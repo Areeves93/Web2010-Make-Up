@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:black;
+}
+
+/* Style the header */
+.header {
+    background-color:blue;
+    color:white;
+    font-family:'Vollkorn SC', serif;
+    padding: 50px;
+    text-align: center;
+}
+
+.headerbox {
+	clear: both;
+	width: 650px;
+	height: 50px;
+	background-color:grey;
+}
+.headerbox ul {
+	float: left;
+	width: 1150px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.headerbox ul li {
+	float: left;
+	display: block;
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	text-align: center;
+}
+
+.headerbox ul li a {
+	display: block;
+	width: 100px;
+	height: 32px;
+	padding: 8px 0 0;
+	margin: 0;
+    font-size: 14px;
+    font-family:'Playfair Display', serif;
+	text-align: center;
+	text-decoration: none;
+	color: blue;	
+	font-weight: normal;
+	outline: none;
+	border: none;
+
+}
+
+.headerbox ul li a:hover, .headerbox ul li .current { 
+	color: .fff; 
+	height: 38px; 
+	padding: 5px 0 0 0; 
+	/* background: url(images/headerbox_hover.png) bottom center no-repeat;  */
+}
+
+.boxa{
+    float:center;
+    width: 600px;
+    height:255px;
+    background-color:#f1f1f1;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+    border:1px solid black;
+    width:35%;
+    height:550px
+}
+iframe{
+    width:280px;
+    height:200px;
+}
+
+/* Middle column */
+.column.middle {
+    border:1px solid black;
+    width: 40%;
+    height:75%;
+    font-size:12px;
+    font-family:'Barlow Semi Condensed', sans-serif;
+    /* float:left; */
+}
+
+h3{
+    font-family:'Playfair Display', serif;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+h4{
+    font-family:'Playfair Display', serif;
+    text-align:center;
+    text-decoration: underline;
+    color:red;
+    font-size:20px; 
+}
+.videobar{
+    width: 280px;
+    height:250px;
+    /* background-color:#f1f1f1; */
+    text-align: center;
+}
+img{
+    float:left;
+    margin:auto;
+    width:250px;
+    height:150px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    border-top:1px solid black;
+    background-color:f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
